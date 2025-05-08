@@ -1,0 +1,9 @@
+yt-dlp
+whisper
+deep-translator
+PyQt6
+langdetect
+rich
+diskcache
+tenacity
+srt

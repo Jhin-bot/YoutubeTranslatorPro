@@ -1,0 +1,42 @@
+# Include the README and LICENSE files
+include README.md
+include LICENSE
+
+# Include the requirements files
+include requirements.txt
+include requirements-dev.txt
+
+# Include documentation
+include docs/*.md
+include docs/*.rst
+recursive-include docs/_static *
+
+# Include configuration files
+include *.json
+include *.yaml
+include *.yml
+
+# Include all test files
+recursive-include tests *
+
+# Include resource files
+include *.png
+include *.ico
+recursive-include resources *
+recursive-include images *
+
+# Include examples
+recursive-include examples *
+
+# Exclude development and temporary files
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude *.egg-info
+global-exclude .git*
+global-exclude .vscode
+global-exclude .idea
+global-exclude venv
+global-exclude .pytest_cache
+
